@@ -47,6 +47,7 @@ audio.offload.multiple.enabled=true
 audio.offload.gapless.enabled=true
 mm.enable.smoothstreaming=true
 audio.offload.buffer.size.kb=1024
+ro.audio.flinger_standbytime_ms=320
 
 # Bluetooth
 bluetooth.hfp.client=1
