@@ -221,6 +221,7 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 
 # Camera
 PRODUCT_PACKAGES += \
+    Snap \
     libcamera_shim
 
 # Power
