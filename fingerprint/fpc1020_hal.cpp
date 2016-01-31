@@ -116,6 +116,7 @@ static int fingerprint_enroll(struct fingerprint_device *dev,
     if (hat->version != HW_AUTH_TOKEN_VERSION) {
         return -EPROTONOSUPPORT;
     }
+    
     if (hat->challenge != device->challenge && !(hat->authenticator_type & HW_AUTH_FINGERPRINT)) {
         return -EPERM;
     }
