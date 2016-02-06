@@ -199,7 +199,5 @@ TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_NO_SCREEN_TIMEOUT := true
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/oneplus/oneplus2/graphics.c
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-
