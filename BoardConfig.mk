@@ -195,9 +195,28 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 -include vendor/oneplus/oneplus2/BoardConfigVendor.mk
 
 # TWRP
-TW_THEME := portrait_hdpi
+#TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_NO_SCREEN_TIMEOUT := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+
+# MultiROM
+TARGET_RECOVERY_IS_MULTIROM := true
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/oneplus/oneplus2/multirom/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 435
+MR_FSTAB := device/oneplus/oneplus2/recovery.fstab
+MR_USE_MROM_FSTAB := false
+MR_KEXEC_MEM_MIN := 0x0
+MR_DEVICE_HOOKS := device/oneplus/oneplus2/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 6
+MR_PIXEL_FORMAT := "RGBX_8888"
+#MR_ENCRYPTION := true
+#MR_ENCRYPTION_SETUP_SCRIPT := device/oneplus/oneplus2/multirom/mr_cp_crypto.sh
+#MR_ENCRYPTION_FAKE_PROPERTIES := true
+MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEADER := device/oneplus/oneplus2/multirom/mr_qcom_overlay.h
+MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
