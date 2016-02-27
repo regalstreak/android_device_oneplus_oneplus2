@@ -21,24 +21,13 @@
 #include <util.h>
 #include <multirom.h>
 
-/*
- * #define GATEKEEPER_PATH "/system/lib64/hw/gatekeeper.angler.so"
- * #define GATEKEEPER_FAKE_SOURCE "/system/build.prop"
- */
-
 #if MR_DEVICE_HOOKS >= 1
 
 int mrom_hook_after_android_mounts(const char *busybox_path, const char *base_path, int type)
 {
- /*   if (type == ROM_DEFAULT)
-  *      return 0;
-  *  // Disable the hardware gatekeeper module to prevent the secondary ROM from corrupting primary ROM's password
-  *  if (access(GATEKEEPER_PATH, R_OK) != 0)
-  *  {
-  *      // make the system try to load build.prop instead - which will give library corrupt error, which is what we need
-  *      link(GATEKEEPER_FAKE_SOURCE, GATEKEEPER_PATH);
-  *  }
-  */  return 0;
+    
+    return 0;
+
 }
 #endif /* MR_DEVICE_HOOKS >= 1 */
 
@@ -97,7 +86,7 @@ static int fork_and_exec(char **cmd, char** env)
     return pID;
 }
 
-//static int qseecomd_pid = -1;
+// static int qseecomd_pid = -1;
 
 
 /*
