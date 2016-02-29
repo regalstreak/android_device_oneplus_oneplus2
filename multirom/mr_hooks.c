@@ -48,6 +48,6 @@ void tramp_hook_before_device_init(void)
 #if MR_DEVICE_HOOKS >= 4
 int mrom_hook_allow_incomplete_fstab(void)
 {
-    return 0;
+    return 1;
 }
 #endif
