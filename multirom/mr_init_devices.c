@@ -7,6 +7,8 @@
 // You can use * at the end to init this folder and all its subfolders
 const char *mr_init_devices[] =
 {
+    "/sys/devices/virtual/mem/null",
+    "/sys/devices/virtual/misc/fuse",
     "/sys/class/graphics/fb0",
 
     "/sys/block/mmcblk0",
@@ -15,14 +17,8 @@ const char *mr_init_devices[] =
     "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0",
     "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001",
     "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p35", // boot
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p41", // cache
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p1", // modem
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p37", // persist
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p42", // system
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p43", // userdata
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p16", // ssd
-    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0rpmb", // RPMB
+    "/sys/devices/soc.0/f9824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0*",
+    
     "/sys/bus/mmc",
     "/sys/bus/mmc/drivers/mmcblk",
     "/sys/module/mmc_core",
@@ -39,12 +35,14 @@ const char *mr_init_devices[] =
     "/sys/bus/usb",
 
     // USB drive is in here
-    // NO IDEA FIX "/sys/devices/platform/xhci-hcd*",
+    //"/sys/devices/platform/xhci-hcd*",
 
-    // Encryption
-    "/sys/devices/virtual/misc/device-mapper",
+    // qcom overlay
     "/sys/devices/virtual/misc/ion",
-    "/sys/devices/virtual/qseecom/qseecom",
+    
+    // Encryption
+    // "/sys/devices/virtual/misc/device-mapper",
+    // "/sys/devices/virtual/qseecom/qseecom",
 
     NULL
 }; 
