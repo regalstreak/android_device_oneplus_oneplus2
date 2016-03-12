@@ -114,7 +114,7 @@
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-	<!-- HW keys prefs-->
+    <!-- HW keys prefs-->
     <bool name="config_hwKeysPref">true</bool>  
 
     <!-- Hardware keys present on the device, stored as a bit field.
@@ -143,7 +143,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">65</integer>
+    <integer name="config_deviceHardwareWakeKeys">64</integer>
 
     <!-- Control the behavior when the user long presses the home button
             0 - Nothing
@@ -402,5 +402,5 @@
 
     <integer name="config_buttonBrightnessSettingDefault">60</integer>
 
-    <bool name="config_hwKeysPref">true</bool>  
+    <bool name="config_hwKeysPref">true</bool>
 </resources>
