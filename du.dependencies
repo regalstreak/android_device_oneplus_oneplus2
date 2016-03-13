@@ -15,11 +15,6 @@
     "branch":       "m-caf"
    },
   {
-    "repository":   "DirtyUnicorns/android_device_qcom_common",
-    "target_path":  "device/qcom/common",
-    "branch":       "m-caf"
-   },
-  {
     "repository":   "Cyanogenmod/android_external_sony_boringssl-compat",
     "target_path":  "external/sony/boringssl-compat",
     "branch":       "cm-13.0"
