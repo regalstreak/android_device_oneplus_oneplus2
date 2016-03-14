@@ -191,8 +191,8 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libOmxVidcCommon \
     libqcmediaplayer \
-    libstagefrighthw \
-    libstagefright_soft_flacdec \
+#    libstagefrighthw \
+#    libstagefright_soft_flacdec \
     qcmediaplayer
 
 # Power
