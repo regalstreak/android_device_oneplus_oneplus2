@@ -391,5 +391,5 @@
 
     <integer name="config_buttonBrightnessSettingDefault">60</integer>
 
-    <bool name="config_hwKeysPref">true</bool>
+    <!-- <bool name="config_hwKeysPref">true</bool> -->
 </resources>
