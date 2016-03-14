@@ -117,3 +117,8 @@ persist.timed.enable=true
 
 # Video
 vidc.enc.dcvs.extra-buff-count=2
+
+# USB
+sys.usb.config=mtp,adb
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
