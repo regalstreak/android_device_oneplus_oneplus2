@@ -18,5 +18,10 @@
     "repository":   "Cyanogenmod/android_external_sony_boringssl-compat",
     "target_path":  "external/sony/boringssl-compat",
     "branch":       "cm-13.0"
+   },
+  {
+    "repository":   "Cyanogenmod/android_external_libnfnetlink",
+    "target_path":  "external/libnfnetlink",
+    "branch":       "cm-13.0"
    }
 ]
