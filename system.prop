@@ -25,6 +25,8 @@ ro.ril.hsxpa=1
 persist.radio.multisim.config=dsds
 persist.radio.apm_sim_not_pwdn=1
 persist.radio.sib16_support=1
+ro.telephony.ril.config=simactivation
+ro.telephony.ril.v3=simactivation
 
 # Audio
 audio.offload.video=true
