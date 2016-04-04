@@ -69,6 +69,9 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu6/online 1
     write /sys/devices/system/cpu/cpu7/online 1
 
+    # Allow CPUs to go in deeper idle state than C0
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
+
     # Restore CPU 4 max freq from msm_performance
     write /sys/module/msm_performance/parameters/cpu_max_freq "4:4294967295 5:4294967295 6:4294967295 7:4294967295"
 
@@ -116,10 +119,22 @@ on enable-low-power
     start perfd
 
 on charger
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "powersave"
-    write /sys/devices/system/cpu/cpu1/online 0
-    write /sys/devices/system/cpu/cpu2/online 0
-    write /sys/devices/system/cpu/cpu3/online 0
+   # Set cpu4,5 online first, or they can't get into low power consumption mode
+   write /sys/devices/system/cpu/cpu4/online 1
+   write /sys/devices/system/cpu/cpu5/online 1
+
+   # Low power governing
+   write /sys/devices/soc.0/qcom,bcl.60/mode disable
+   write /sys/devices/soc.0/qcom,bcl.60/hotplug_mask 0
+   write /sys/devices/soc.0/qcom,bcl.60/hotplug_soc_mask 0
+   write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
+   write /sys/devices/system/cpu/cpu1/online 0
+   write /sys/devices/system/cpu/cpu2/online 0
+   write /sys/devices/system/cpu/cpu3/online 0
+   write /sys/devices/system/cpu/cpu4/online 0
+   write /sys/devices/system/cpu/cpu5/online 0
+   write /sys/devices/system/cpu/cpu6/online 0
+   write /sys/devices/system/cpu/cpu7/online 0
 
 on class_start:late_start
     trigger enable-low-power
