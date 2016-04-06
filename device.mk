@@ -276,6 +276,10 @@ PRODUCT_PACKAGES += \
     hostapd_default.conf \
     hostapd.accept \
     hostapd.deny
+    
+# Delta Updates
+PRODUCT_PACKAGES += \
+    OpenDelta
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
