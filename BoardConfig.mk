@@ -194,11 +194,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 
-# SELinux
-include device/qcom/sepolicy/sepolicy.mk
-
-BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
-
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
