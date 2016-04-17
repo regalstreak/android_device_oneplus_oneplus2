@@ -117,3 +117,45 @@ persist.timed.enable=true
 
 # Video
 vidc.enc.dcvs.extra-buff-count=2
+
+## Tweaks
+# Enable HSUPA for faster upload speeds
+ro.ril.hsxpa=3
+# Use Google DNS for faster DNS resolution
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+# Faster boot
+dalvik.vm.dexopt-flags=o=v,
+# Video acceleration / GPU rendering
+video.accelerate.hw=1
+debug.sf.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
+debug.composition.type=gpu
+# Do not check JNI (little performance boost without disadvantages)
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+# 10 fingers multi touch
+ro.product.max_num_touch=10
+ro.product.multi_touch_enabled=true
+# Mimimum pointer duration for better gaming experience without disadvantages
+ro.min_pointer_dur=1
+# Much faster responsiveness of touch screen
+windowsmgr.max_events_per_sec=1400
+# Faster UI rendering / building without negative effects
+ro.min.fling_velocity=6400
+ro.max.fling_velocity=12800
+# Better camera / picture quality
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+# 13 megapixels camera
+ro.media.capture.maxres=13m
+# High panorama resolution
+ro.media.panorama.defres=3264x1840
+ro.media.panorama.frameres=1280x720
+# Enable RAW support
+ro.camcorder.videoModes=true
+# 65 FPS for video
+ro.media.enc.hprof.vid.fps=65
+# Maximum JPEG quality
+ro.media.enc.jpeg.quality=100
