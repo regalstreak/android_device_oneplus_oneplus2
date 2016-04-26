@@ -14,5 +14,5 @@
 
 $(call inherit-product, device/oneplus/oneplus2/full_oneplus2.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common halogenOS stuff.
+$(call inherit-product, vendor/xos/common.mk)
