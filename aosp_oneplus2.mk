@@ -15,4 +15,4 @@
 $(call inherit-product, device/oneplus/oneplus2/full_oneplus2.mk)
 
 # Inherit some common halogenOS stuff.
-$(call inherit-product, vendor/xos/common.mk)
+$(call inherit-product, vendor/xos/config/common.mk)
