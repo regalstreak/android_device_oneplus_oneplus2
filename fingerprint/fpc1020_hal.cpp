@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2015 The CyanogenMod Project
+ *  Copyright (c) 2016, halogenOS (XOS)
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you
  *  may not use this file except in compliance with the License.  You may
@@ -346,7 +346,7 @@ fingerprint_module_t HAL_MODULE_INFO_SYM = {
         .hal_api_version    = HARDWARE_HAL_API_VERSION,
         .id                 = FINGERPRINT_HARDWARE_MODULE_ID,
         .name               = "FPC1020 Fingerprint HAL",
-        .author             = "The CyanogenMod Project",
+        .author             = "halogenOS",
         .methods            = &fingerprint_module_methods,
         .dso                = NULL,
         .reserved           = { 0 }
