@@ -120,6 +120,7 @@ persist.timed.enable=true
 vidc.enc.dcvs.extra-buff-count=2
 
 #### halogenOS Tweaks ####
+## by Sewer56lol
 
 # Disable AwesomePlayer Stats
 persist.debug.sf.statistics=0
@@ -128,14 +129,14 @@ persist.debug.sf.statistics=0
 # 1:ERROR 2:HIGH 4:LOW 0:NOLOGS 7:AllLOGS
 vidc.debug.level=0
 
-# Raise resamplet quality
+# Raise resampler quality
 persist.af.resampler.quality=255
 persist.audio.hp=true
 
 ## Performance ##
 debug.performance.tuning=1
 ro.config.zram=false
-ro.sys.fw.dex2oat_thread_count=4
+ro.sys.fw.dex2oat_thread_count=8
 
 ## Classic General Tweaks ##
 ro.config.hw_quickpoweron=true
@@ -151,9 +152,6 @@ persist.sys.purgeable_assets=1
 persist.adb.notify=0 
 ro.kernel.android.checkjni=0
 
-## Since we're on ART does this still have an effect?
-dalvik.vm.verify-bytecode=false
-
 ##Profiler
 profiler.debugmonitor=false
 profiler.launch=false
@@ -167,7 +165,38 @@ debug.performance.tuning=1
 persist.sys.ui.hw=true
 hw3d.force=1
 persist.debug.sf.statistics=0
-video.accelerate.hw=1
 
-## LCD Density ##
-ro.sf.lcd_density=401
+### Tweaks ###
+## by xdevs23
+
+# Enable HSUPA for faster upload on 3G
+ro.ril.hsxpa=3
+# Use Google DNS
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+# Enable GPU acceleration
+video.accelerate.hw=1
+debug.sf.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
+debug.composition.type=gpu
+# Disable JNI error checking for better performance
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+# Use a shorter minimum pointer duration to have better responsiveness
+# especially on games where you need to tap very fast
+ro.min_pointer_dur=1
+# Max events per second, increases responsiveness a lot
+windowsmgr.max_events_per_sec=1400
+# Higher fling velocities to render and process UI faster
+ro.min.fling_velocity=6800
+ro.max.fling_velocity=13600
+# Use better camera quality
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+# Enable RAW support
+ro.camcorder.videoModes=true
+# 65 FPS video
+ro.media.enc.hprof.vid.fps=65
+# 100 % JPEG quality
+ro.media.enc.jpeg.quality=100
