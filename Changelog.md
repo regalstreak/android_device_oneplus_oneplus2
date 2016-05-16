@@ -10,18 +10,18 @@
 
 ## The Changelog
 
-### halogenOS - 0.2-alpha - 16th May 2016 - Build 1
+### halogenOS - 0.2-alpha - 16th May 2016 - Build 2
 
-- Changed HalogenOS to halogenOS in Settings > About
-- Fixed halogenOS version. Now it displays 0.2 instead of the big string
-- Calendar now works (Added CalendarProvider)
-- April Security Patch
-- Made Bensch Kernel compatible
-- Minor improvements
-- Fixed Rebooting bug
-- Fixed init.d 
-- Added Latest busybox
-- Moved certain optional apps to /data/app like:
+- Changed HalogenOS to halogenOS in Settings > About.
+- Fixed halogenOS version. Now it displays 0.2 instead of the big string.
+- Calendar now works (Added CalendarProvider).
+- April security patch merged.
+- Now compatible with Benschhold's Kernel.
+- Minor improvements.
+- Fixed Rebooting bug.
+- Added support for the execution of init.d scripts.
+- Added support for busybox.
+- Moved certain optional apps to /data/app:
   - Browser
   - Camera (Camera2)
   - Calculator (ExactCalculator) 
@@ -33,7 +33,7 @@
   - SoundRecorder
   - Stk
   - Terminal
-- Merged Upstream to the latest CAF Release
+- Merged ROM sources upstream to the latest CAF Release
 
 ### halogenOS - v0.1-alpha - 13th May 2016 - Build 1
 
