@@ -14,7 +14,7 @@
 
 - Changed HalogenOS to halogenOS in Settings > About
 - Fixed halogenOS version. Now it displays 0.2 instead of the big string
-- Calender now works (Added CalenderProvider)
+- Calendar now works (Added CalendarProvider)
 - April Security Patch
 - Made Bensch Kernel compatible
 - Minor improvements
