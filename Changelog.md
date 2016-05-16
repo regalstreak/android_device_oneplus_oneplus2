@@ -10,7 +10,7 @@
 
 ## The Changelog
 
-### halogenOS - 0.2-alpha - 16th May 2016 - Build 2
+### halogenOS - 0.2-alpha - 16th May 2016 - Build 1
 
 - Changed HalogenOS to halogenOS in Settings > About.
 - Fixed halogenOS version. Now it displays 0.2 instead of the big string.
