@@ -138,8 +138,6 @@ ro.config.zram=false
 ro.sys.fw.dex2oat_thread_count=8
 
 ## Classic General Tweaks ##
-ro.config.hw_quickpoweron=true
-persist.sys.shutdown.mode=hibernate
 ro.config.disable.hw_accel=false
 ro.config.nocheckin=1
 profiler.force_disable_ulog=1
@@ -148,7 +146,7 @@ com.qc.hardware=1
 ro.config.hw_fast_dormancy=1
 ro.kernel.checkjni=0
 persist.sys.purgeable_assets=1
-persist.adb.notify=0 
+persist.adb.notify=0
 ro.kernel.android.checkjni=0
 
 ##Profiler
