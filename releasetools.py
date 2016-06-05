@@ -46,7 +46,7 @@ image_partitions = {
 }
 
 def FullOTA_InstallEnd(info):
-  info.script.Print("Writing recommended Exodus Firmware...")
+  info.script.Print("Writing recommended Firmware...")
   for k, v in image_partitions.iteritems():
     try:
       img_file = info.input_zip.read("RADIO/" + k)
