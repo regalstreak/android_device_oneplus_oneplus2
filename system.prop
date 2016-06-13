@@ -132,7 +132,7 @@ persist.audio.hp=true
 ## Performance ##
 debug.performance.tuning=1
 ro.config.zram=false
-ro.sys.fw.dex2oat_thread_count=8
+ro.sys.fw.dex2oat_thread_count=12
 
 ## Classic General Tweaks ##
 ro.config.disable.hw_accel=false
