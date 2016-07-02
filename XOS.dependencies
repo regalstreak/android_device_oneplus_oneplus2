@@ -5,8 +5,8 @@
     "branch":       "XOS-6.0"
   },
   {
-    "repository": "halogenOS/android_vendor_oneplus",
-    "target_path": "vendor/oneplus",
+    "repository": "halogenOS/android_vendor_oneplus_oneplus2",
+    "target_path": "vendor/oneplus/oneplus2",
     "branch":       "XOS-6.0"
   },
   {
