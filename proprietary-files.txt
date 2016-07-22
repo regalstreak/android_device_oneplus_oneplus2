@@ -381,6 +381,24 @@ etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 
+# OnePlus Camera
+bin/secure_camera_sample_client
+framework/org.codeaurora.camera.jar
+lib/libfilter-sdk.so
+lib/libopbaselib.so
+lib/libopcamera.so
+lib/libopcameralib.so
+lib64/libfilter-sdk.so
+lib64/libopbaselib.so
+priv-app/OnePlusCamera/OnePlusCamera.apk
+priv-app/OnePlusCameraService/OnePlusCameraService.apk
+vendor/lib/lib-imscamera.so
+vendor/lib/libimscamera_jni.so
+vendor/lib/libimsmedia_jni.so
+vendor/lib64/lib-imscamera.so
+vendor/lib64/libimscamera_jni.so
+vendor/lib64/libimsmedia_jni.so
+
 # Perf
 bin/energy-awareness
 bin/msm_irqbalance
