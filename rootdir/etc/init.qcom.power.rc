@@ -68,7 +68,7 @@ on enable-low-power
     write /sys/module/msm_performance/parameters/cpu_max_freq "4:4294967295 5:4294967295 6:4294967295 7:4294967295"
 
     # Input boost configuration
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1344000"
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1248000"
     write /sys/module/cpu_boost/parameters/input_boost_ms 40
 
     # Configure core_ctl module parameters
