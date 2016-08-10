@@ -166,7 +166,7 @@ on init
     chmod 660 /sys/class/leds/green/duty_pcts
     chmod 660 /sys/class/leds/blue/duty_pcts
 
-    # Add for enginerr app for sys/class selinux recon
+    # Add for engineer app for sys/class selinux recon
     restorecon /sys/class/leds/keyboard-backlight/brightness
     restorecon /sys/class/leds/button-backlight/brightness
     restorecon /sys/class/leds/red/brightness
