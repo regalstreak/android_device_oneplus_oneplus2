@@ -46,7 +46,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     UNUSED(board_type);
 
     rc = property_get("ro.product.device", device);
-    if (!rc || !ISMATCH((device, "OnePlus2") || (device, "oneplus2")))
+    if (!rc || !ISMATCH(device, "OnePlus2") || !ISMATCH(device, "oneplus2"))
         return;
 
     property_get("ro.boot.rf_v1", rf_version);
