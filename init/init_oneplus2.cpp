@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2015, The CyanogenMod Project
+   Copyright (c) 2016 halogenOS
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -39,7 +39,7 @@ void init_variant_properties() {
     char rf_version[PROP_VALUE_MAX];
     int rc;
 
-    rc = property_get("ro.cm.device", device);
+    rc = property_get("ro.xos.device", device);
     if (!rc || strncmp(device, "oneplus2", 8))
         return;
 
