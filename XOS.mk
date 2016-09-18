@@ -19,10 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from oneplus2 device
 $(call inherit-product, device/oneplus/oneplus2/device.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common XOS stuff.
+$(call inherit-product, vendor/xos/config/common.mk)
 
-PRODUCT_NAME := cm_oneplus2
+PRODUCT_NAME := XOS_oneplus2
 PRODUCT_DEVICE := oneplus2
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -34,8 +34,8 @@ TARGET_VENDOR_DEVICE_NAME := OnePlus2
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus2 PRODUCT_NAME=OnePlus2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus2/OnePlus2:6.0.1/MMB29M/1447840920:user/release-keys \
-    PRIVATE_BUILD_DESC="OnePlus2-user 6.0.1 MMB29M 20 dev-keys"
+    BUILD_FINGERPRINT=OnePlus/OnePlus2/OnePlus2:7.0/MMB29M/1447840920:user/release-keys \
+    PRIVATE_BUILD_DESC="OnePlus2-user 7.0 MMB29M 20 dev-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
